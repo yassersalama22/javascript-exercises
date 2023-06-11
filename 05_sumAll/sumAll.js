@@ -11,11 +11,12 @@ const sumAll = function(number1, number2) {
     }
 
     // now sort the arguments to start from the smaller number
-    arguments = arguments.sort();
+    args = Array.from(arguments);
+    args = args.sort();
     // the varaiable will hold the value of the sum
     let sum = 0;
     // loop through the range of the argument and sum the numbers
-    for (let index = arguments[0]; index <= arguments[1]; index++) {
+    for (let index = args[0]; index <= args[1]; index++) {
         sum += index;
     }
 
